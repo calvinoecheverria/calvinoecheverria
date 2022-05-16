@@ -1,3 +1,211 @@
-body {
-  background: orange;
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
+
+.bg-black {
+    background-color: black;
+    /*opacity: 50%;*/
+    }
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*font-family: "Verdana, Geneva, Tahoma, sans-serif";*/
+    }
+
+.imagen-fondo {
+    background-image: url(http://www.calvinoecheverria.com/imgs/background.jpg) !important; 
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    line-height: 1;
+    }
+
+.imagen-fondo-byn {
+    background-image: url(http://www.calvinoecheverria.com/imgs/background-byn.jpg) !important; 
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    line-height: 1;
+    }
+
+.imagen-fondo-op30 {
+    background-image: url(http://www.calvinoecheverria.com/imgs/background-op30.jpg) !important; 
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    line-height: 1;
+    }
+
+.imagen-fondo-op50 {
+    background-image: url(http://www.calvinoecheverria.com/imgs/background-op50.jpg) !important; 
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    line-height: 1;
+    }
+
+.imagen-fondo-op70 {
+    background-image: url(http://www.calvinoecheverria.com/imgs/background-op70.jpg) !important; 
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    line-height: 1;
+    }
+
+#navbar-iframe {
+        opacity:0;
+        filter:alpha(Opacity=0,FinishedOpacity=0);
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+        
+#navbar-iframe:hover {
+        opacity:1.0;
+        filter:alpha(Opacity=100,FinishedOpacity=100);
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        }
+
+
+.navbar a{ color: rgba(255, 255, 255, 0.700) !important;}
+.navbar li{ color: rgba(255, 255, 255, 0.700) !important;}
+.navbar :hover{ color: white  !important;}
+
+
+.btn-card {
+    color: #6c757d;
+    border-color: #6c757d;
+  }
+  .btn-card:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.500);
+    border-color: white ;
+  }
+
+.btn-teal {
+    background-color: teal;
+/*    background-color: hotpink;*/
+    color: white;
+    }
+
+
+.card {
+    margin: 10px 10px 10px 10px !important;
+    border-radius: 2px !important;
+    background-color: rgba(255, 255, 255, 0.500);
+    }
+    /*filter:grayscale(1);*/
+
+/* APLICA A IMAGENES DE CARD GRAYSCALE*/
+.card-byn img {
+    filter:grayscale() !important;
+
+}
+
+.card-byn-obra img {
+    filter:grayscale() !important;
+
+}
+/* APLICA AL HACER HOVER SOBRE CARD-BYN HIDDEN AL H5 Y AL P */
+
+.card-byn-obra:hover h5 { visibility:hidden !important;}
+.card-byn-obra:hover p { visibility:hidden !important;}
+
+.card-byn-obra:hover img {
+    filter:none !important;
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+}
+
+.card-byn:hover img {
+    filter:none !important;
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+}
+
+
+
+/*
+.navbar-visible {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    opacity:1;
+
+  }
+.navbar-invisible {
+    position:fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    opacity: 0;
+
+  }
+
+.navbar a{ color: rgba(255, 255, 255, 0.600) !important;}
+.navbar-visible a{ color: rgba(255, 255, 255, 0.600) !important;}
+.navbar-invisible a{ color: rgba(255, 255, 255, 0.600) !important;}
+
+.navbar :hover{ color: white  !important;}
+.navbar-visible :hover{color: white  !important;}
+.navbar-invisible :hover{
+    color: white  !important;
+    opacity: 1 !important;
+}
+
+.card-hda img{
+    filter:grayscale() !important;
+}
+/*
+.card-hda :hover img{
+    filter:none;
+/*    filter:invert() !important; */
+
+
+
+footer a{
+    color:white !important;
+}
+
+
